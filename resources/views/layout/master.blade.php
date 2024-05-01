@@ -9,7 +9,7 @@
   <body>
    
     <div class="bg-dark py-2">
-        <h3 class="text-white text-center">LaraCrud</h3>
+      <h3 class="text-white text-center"><a href="{{ route('products.index') }}" class="text-white text-decoration-none">LaraCrud</a></h3>
     </div>
     <div class="container">
         @yield('content')

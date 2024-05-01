@@ -37,10 +37,10 @@
                                 <th>Action</th>
                             </tr>
                             @if ($products->isNotEmpty())
-                                
+                                @php $serial = 1; @endphp
                                 @foreach ($products as $product)
                                     <tr>
-                                        <td>{{$product->id}}</td>
+                                        <td>{{$serial++}}</td>
                                         <td>
                                             @if ($product->image != "")
                                                 <img src="{{ asset('uploads/products/'.$product->image) }}" width="50" alt="{{$product->name}}">
